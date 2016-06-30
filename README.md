@@ -19,7 +19,7 @@ docker build -t nginx-phalcon .
 
 ## Options
 ### Document root
-Additionally you can define the public folder for each instance by passing an env variable called WEBPUBLIC for example adding `-e "WEBPUBLIC=public/es"`
+Additionally you can define the public folder for each instance by passing an env variable called WEBPUBLIC for example adding `-e "WEBPUBLIC=public/api"`
 
 	docker run --name my-nginx-phalcon -d -v="/pathto/to/your/code":"/var/www" -e "WEBPUBLIC=public/api" -p 8888:80 nginx-phalcon
 
